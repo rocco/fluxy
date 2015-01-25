@@ -57,7 +57,7 @@ var TodoApp = React.createClass({
 
   render: function() {
     var allTodos = TodoStore.toJS(this.state.allTodos);
-  	return (
+    return (
       <div>
         <Header />
         <MainSection
@@ -66,7 +66,7 @@ var TodoApp = React.createClass({
         />
         <Footer allTodos={allTodos} />
       </div>
-  	);
+    );
   },
 
   _onChange: function(keys, oldState, newState) {
